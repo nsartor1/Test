@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Walk_In_Customer__c</fullName>
+    <externalId>false</externalId>
+    <formula>Ship_Method__c == &#39;WI&#39; || Ship_Method__c = &#39;PU&#39; || Ship_Method__c = &#39;PSL&#39; || Ship_Method__c = &#39;PC&#39; || Ship_Method__c = &#39;PCG&#39; || Ship_Method__c = &#39;PUC&#39;</formula>
+    <inlineHelpText>Indicates if the customer is walk-in by the GP/Salespad default Ship Method</inlineHelpText>
+    <label>Walk-In Customer?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

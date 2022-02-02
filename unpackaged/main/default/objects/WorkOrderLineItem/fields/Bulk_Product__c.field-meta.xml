@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bulk_Product__c</fullName>
+    <description>Indicates if the ATS Product Name is a Bulk SKU (Bulk, Tons or 2000LB)</description>
+    <externalId>false</externalId>
+    <formula>OR(CONTAINS(Product_Name__c, &quot;TON&quot;),CONTAINS(Product_Name__c, &quot;BULK&quot;),CONTAINS(Product_Name__c, &quot;2000LB&quot;))</formula>
+    <inlineHelpText>Indicates if the ATS Product Name is a Bulk SKU (Bulk, Tons or 2000LB)</inlineHelpText>
+    <label>Bulk Product?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

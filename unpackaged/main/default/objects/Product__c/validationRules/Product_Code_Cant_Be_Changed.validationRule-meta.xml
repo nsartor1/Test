@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Code_Cant_Be_Changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Name) &amp;&amp;  $User.Alias != &#39;tpruden&#39;</errorConditionFormula>
+    <errorMessage>You are not authorized to change the Product Code. Please contact your Salesforce Admin.</errorMessage>
+</ValidationRule>

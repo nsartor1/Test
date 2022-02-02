@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Override_Cost__c</fullName>
+    <description>Updated by integration with Salespad; if greater than 0 will be used instead of Average Cost in Current Cost Formula (Reps will see Current Cost in App, Recommended Pricing formulas, etc)</description>
+    <externalId>false</externalId>
+    <label>Override Cost</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

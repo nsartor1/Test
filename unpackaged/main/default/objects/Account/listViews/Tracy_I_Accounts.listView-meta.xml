@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tracy_I_Accounts</fullName>
+    <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Customer_Name__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sales_Rep__c</field>
+        <operation>equals</operation>
+        <value>Evan Buckley</value>
+    </filters>
+    <filters>
+        <field>Sales_Rep__c</field>
+        <operation>equals</operation>
+        <value>Jamie Mehringer</value>
+    </filters>
+    <filters>
+        <field>Sales_Rep__c</field>
+        <operation>equals</operation>
+        <value>Brian Winka</value>
+    </filters>
+    <filters>
+        <field>Sales_Rep__c</field>
+        <operation>equals</operation>
+        <value>Kevin Breuker</value>
+    </filters>
+    <label>Tracy I Accounts</label>
+    <sharedTo>
+        <group>Collections</group>
+    </sharedTo>
+</ListView>

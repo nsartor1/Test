@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_JDT_Service_Book__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To see if a record of this product is in Product2</description>
+    <externalId>false</externalId>
+    <label>In JDT Service Book</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

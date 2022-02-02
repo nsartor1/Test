@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validated_Line_Items__c</fullName>
+    <description>Count of all Work Order Line Items where the cost has been Validated</description>
+    <externalId>false</externalId>
+    <label>Validated Line Items</label>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Cost_Validated__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

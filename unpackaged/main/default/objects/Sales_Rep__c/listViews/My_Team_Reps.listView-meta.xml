@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Team_Reps</fullName>
+    <columns>Sales_Rep_Num__c</columns>
+    <columns>NAME</columns>
+    <columns>Manager__c</columns>
+    <columns>Primary_Location__c</columns>
+    <columns>Primary_Market__c</columns>
+    <columns>Mobile__c</columns>
+    <columns>Email__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Sales Rep Record</label>
+    <sharedTo>
+        <group>Sales_Managers</group>
+        <group>Sales_Reps</group>
+    </sharedTo>
+</ListView>

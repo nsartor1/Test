@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchased_Steel_Green_Unit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicate if customer purchased a Steel Green Unit in the past. Process Builder will control new sales</description>
+    <externalId>false</externalId>
+    <label>Purchased Steel Green Unit?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

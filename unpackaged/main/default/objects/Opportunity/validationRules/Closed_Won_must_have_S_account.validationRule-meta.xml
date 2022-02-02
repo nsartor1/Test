@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Won_must_have_S_account</fullName>
+    <active>true</active>
+    <description>Force Sports Turf Opps to have a &#39;S&#39; account in order to close win. Remember to only require on sports turf recordId
+
+&#39;Account.RecordTypeId === &#39;0122M000001UYjkQAG&#39;, = no lead accounts</description>
+    <errorConditionFormula>And(
+ ISCHANGED(StageName),
+ ISPICKVAL(StageName, &#39;Closed Won&#39;),
+ NOT(CONTAINS(  Account.Customer__c  , &#39;-S&#39;)), 
+ OR(
+   RecordType.Name  == &#39;Sports Turf&#39;,
+ RecordType.Name == &#39;Sports Opp - Construction&#39;,
+ RecordType.Name == &#39;Sports Opp - Maintenance&#39;,
+ RecordType.Name == &#39;Sports Opp - New&#39; 
+)
+  
+
+)</errorConditionFormula>
+    <errorMessage>Only &#39;S&#39; accounts can be closed won</errorMessage>
+</ValidationRule>

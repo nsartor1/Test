@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_Manager_Email__c</fullName>
+    <description>For use in alert AM of new work order. Set in Process Builder Work Order Set Area Manager</description>
+    <externalId>false</externalId>
+    <label>Area Manager Email</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

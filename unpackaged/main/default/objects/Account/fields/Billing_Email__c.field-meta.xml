@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Email__c</fullName>
+    <description>Syncs with billing email in GP/Salespad (used to email Invoices if Customer also set to &#39;Paperless Invoices&#39;) - Customer can modify in ATS Connet</description>
+    <externalId>false</externalId>
+    <label>Billing Email</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

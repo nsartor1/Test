@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Per_Acre__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Track Product Application per Acre</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Track Product Application per Acre</inlineHelpText>
+    <label>Per Acre</label>
+    <type>Checkbox</type>
+</CustomField>

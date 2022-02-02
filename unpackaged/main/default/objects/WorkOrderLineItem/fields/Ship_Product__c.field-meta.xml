@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_Product__c</fullName>
+    <description>The Sales Order # of the ordered product in our ERP (Salespad/GP)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Sales Order # of the ordered product in our ERP (Salespad/GP)</inlineHelpText>
+    <label>Ship Product #</label>
+    <length>30</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

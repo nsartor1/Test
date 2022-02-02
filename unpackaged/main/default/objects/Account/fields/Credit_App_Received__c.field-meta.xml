@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_App_Received__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>NOTE: This will be checked moving forward when Credit Apps are completed from Salesforce, but may not reflect past credit apps received</description>
+    <externalId>false</externalId>
+    <inlineHelpText>NOTE: This will be checked moving forward when Credit Apps are completed from Salesforce, but may not reflect past credit apps received</inlineHelpText>
+    <label>Credit App Received</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

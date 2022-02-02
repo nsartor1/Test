@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Exempt__c</fullName>
+    <description>Indicates if the Tax Schedule in GP is &quot;Exempt&quot;</description>
+    <externalId>false</externalId>
+    <formula>TRIM(Tax_Schedule_ID__c) = &#39;EXEMPT&#39;</formula>
+    <label>Tax Exempt</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

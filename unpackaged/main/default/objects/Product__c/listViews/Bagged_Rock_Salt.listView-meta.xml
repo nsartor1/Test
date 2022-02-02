@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bagged_Rock_Salt</fullName>
+    <columns>NAME</columns>
+    <columns>Product_Name__c</columns>
+    <columns>Product_Status__c</columns>
+    <columns>Total_Qty_On_Hand__c</columns>
+    <columns>Total_Qty_Available__c</columns>
+    <columns>Total_Qty_Allocated__c</columns>
+    <columns>Total_Open_Amt__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Subcategory__c</field>
+        <operation>equals</operation>
+        <value>Rock Salt - Bagged</value>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Bagged Rock Salt</label>
+    <sharedTo>
+        <group>SF_Admins</group>
+        <group>Sales_Managers</group>
+        <role>IT_Manager</role>
+        <role>Marketing_Manager</role>
+    </sharedTo>
+</ListView>

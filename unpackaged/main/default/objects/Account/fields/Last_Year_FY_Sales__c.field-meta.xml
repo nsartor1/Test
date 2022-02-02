@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Year_FY_Sales__c</fullName>
+    <description>Is a roll up field one filter must be start of the year you want to measure from I.E. 10/1/2017 and LAST_N_DAYS:365 will give you today minus a year</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sales through this date a year ago for Fiscal Sales.</inlineHelpText>
+    <label>2 Years Ago (DO NOT USE - ASK IT)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

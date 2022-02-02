@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rem_to_Invoice__c</fullName>
+    <description>Editable by Managers - Predicted $ Remaining to Invoice in Current Month</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Editable by Managers - Predicted $ Remaining to Invoice in Current Month</inlineHelpText>
+    <label>Rem. to Invoice</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

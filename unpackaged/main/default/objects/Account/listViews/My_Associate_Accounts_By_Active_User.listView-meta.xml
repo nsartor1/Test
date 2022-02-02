@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Associate_Accounts_By_Active_User</fullName>
+    <columns>Customer_Name__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Total_Sales_Two_Years_Ago__c</columns>
+    <columns>Current_Year_FY_Sales__c</columns>
+    <columns>Open_Orders_Total__c</columns>
+    <columns>Account_Level__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer</value>
+    </filters>
+    <filters>
+        <field>Inactive__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Associate_User__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Associate Accounts</label>
+    <sharedTo>
+        <group>Sales_Managers</group>
+        <group>Sales_Reps</group>
+    </sharedTo>
+</ListView>

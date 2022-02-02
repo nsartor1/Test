@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Competitor__c</fullName>
+    <description>Used to track why Customer left ATS for another competitor</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If Customer left ATS for a competitor, why?</inlineHelpText>
+    <label>If Competitor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

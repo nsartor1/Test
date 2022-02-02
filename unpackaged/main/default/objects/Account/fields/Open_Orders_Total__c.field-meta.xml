@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Orders_Total__c</fullName>
+    <description>The total of any active Open Orders on this Account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The total of any active Open Orders on this Account</inlineHelpText>
+    <label>Open Orders $</label>
+    <summarizedField>Open_Order__c.Doc_Amount__c</summarizedField>
+    <summaryForeignKey>Open_Order__c.Customer__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

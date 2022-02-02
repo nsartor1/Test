@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Find_in_CRM_Application</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Find in CRM Application</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>window.open(&quot;http://crm.advancedturf.com/customers?q={!Account.Customer__c}&quot;, &quot;_blank&quot;);</url>
+</WebLink>

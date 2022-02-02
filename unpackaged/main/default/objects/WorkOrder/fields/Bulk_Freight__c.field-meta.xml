@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bulk_Freight__c</fullName>
+    <description>JDT &quot;X&quot; item - but not true mobilization - Freight that will be on Product Order and Needs Marked Down</description>
+    <externalId>false</externalId>
+    <inlineHelpText>JDT &quot;X&quot; item - but not true mobilization - Freight that will be on Product Order and Needs Marked Down</inlineHelpText>
+    <label>Bulk Freight</label>
+    <summarizedField>WorkOrderLineItem.Extended_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Product_Code__c</field>
+        <operation>equals</operation>
+        <value>JDT-X-BULK FREIGHT</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

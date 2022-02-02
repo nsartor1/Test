@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATS_Bulk_Product__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if this is an ATS Product sold in Bulk (Tons, Bulk or 2000LB in SKU)</description>
+    <externalId>false</externalId>
+    <label>ATS Bulk Product</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

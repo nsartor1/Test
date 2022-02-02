@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Average_Cost__c</fullName>
+    <description>Management Information Only</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Management Information Only</inlineHelpText>
+    <label>Standard Cost</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Currency</type>
+</CustomField>

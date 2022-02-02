@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Customer__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Sales_Rep__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>Open_Orders_Total__c</columns>
+    <columns>X2020_CY_Sales__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ERP_Create_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>Customer__c</field>
+        <operation>contains</operation>
+    </filters>
+    <label>Admin - New Accounts</label>
+    <sharedTo>
+        <group>IT_Department</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkOrder_PartialorComple_WorkOrder</fullName>
+    <active>true</active>
+    <description>Create a validation on the work order that if the Work Order is marked &quot;completed&quot; or &quot;partial completion&quot; that the Invoicing Notes field is required</description>
+    <errorConditionFormula>AND(
+				OR(
+								ISPICKVAL(Status, &#39;Completed&#39;),
+								ISPICKVAL(Status, &#39;Partial Complete&#39;)
+    ),
+				ISBLANK( Invoicing_Notes__c )
+)</errorConditionFormula>
+    <errorMessage>Invoicing Notes is required if Status is Completed or Partial Complete</errorMessage>
+</ValidationRule>

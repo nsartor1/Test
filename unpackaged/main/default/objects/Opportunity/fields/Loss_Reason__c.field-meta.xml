@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lost to Competitor</fullName>
+                <default>false</default>
+                <label>Lost to Competitor</label>
+            </value>
+            <value>
+                <fullName>Lost Bid</fullName>
+                <default>false</default>
+                <label>Lost Bid</label>
+            </value>
+            <value>
+                <fullName>No Budget / Lost Funding</fullName>
+                <default>false</default>
+                <label>No Budget / Lost Funding</label>
+            </value>
+            <value>
+                <fullName>No Decision / Non-Responsive</fullName>
+                <default>false</default>
+                <label>No Decision / Non-Responsive</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Expired Quote</fullName>
+                <default>false</default>
+                <label>Expired Quote</label>
+            </value>
+            <value>
+                <fullName>Scheduling Conflict</fullName>
+                <default>false</default>
+                <label>Scheduling Conflict</label>
+            </value>
+            <value>
+                <fullName>Choose Other Opportunity</fullName>
+                <default>false</default>
+                <label>Choose Other ATS Opportunity</label>
+            </value>
+            <value>
+                <fullName>Covid Delayed/Potential Future</fullName>
+                <default>false</default>
+                <label>Covid Delayed / Potential Future</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost to Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost Bid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Budget / Lost Funding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Decision / Non-Responsive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Expired Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Scheduling Conflict</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Choose Other Opportunity</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

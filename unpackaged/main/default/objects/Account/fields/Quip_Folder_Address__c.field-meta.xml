@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quip_Folder_Address__c</fullName>
+    <description>Is set by flow from the opportunity when a opp gets to quote</description>
+    <externalId>false</externalId>
+    <label>Quip Folder Address</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Filtered_By_Product</fullName>
+    <columns>NAME</columns>
+    <columns>Product_Family__c</columns>
+    <columns>Product_Code__c</columns>
+    <columns>Product_Name__c</columns>
+    <columns>Primary_Category__c</columns>
+    <columns>Subcategory__c</columns>
+    <columns>N__c</columns>
+    <columns>P__c</columns>
+    <columns>K__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>WM</value>
+    </filters>
+    <label>Filtered By Product #</label>
+    <sharedTo>
+        <group>IT_Department</group>
+    </sharedTo>
+</ListView>

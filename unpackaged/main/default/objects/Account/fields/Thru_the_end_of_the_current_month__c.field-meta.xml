@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Thru_the_end_of_the_current_month__c</fullName>
+    <externalId>false</externalId>
+    <label>Thru the end of the month LY</label>
+    <summarizedField>Sales_Document__c.Product_Sub_Total__c</summarizedField>
+    <summaryFilterItems>
+        <field>Sales_Document__c.Fiscal_Year__c</field>
+        <operation>contains</operation>
+        <value>FY 21</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Sales_Document__c.Doc_Date__c</field>
+        <operation>lessThan</operation>
+        <value>1/31/2021</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Sales_Document__c.Customer__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

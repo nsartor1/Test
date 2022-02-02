@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_T_O_Reps</fullName>
+    <columns>NAME</columns>
+    <columns>Sales_Rep_Num__c</columns>
+    <columns>Title__c</columns>
+    <columns>Primary_Location__c</columns>
+    <columns>Primary_Market__c</columns>
+    <columns>Salesforce_User__c</columns>
+    <columns>Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>contains</operation>
+        <value>Sales</value>
+    </filters>
+    <filters>
+        <field>Primary_Market__c</field>
+        <operation>equals</operation>
+        <value>Turf and Ornamental</value>
+    </filters>
+    <label>Active T&amp;O Reps</label>
+    <sharedTo>
+        <group>Sales_Managers</group>
+        <role>HR_Manager</role>
+    </sharedTo>
+</ListView>

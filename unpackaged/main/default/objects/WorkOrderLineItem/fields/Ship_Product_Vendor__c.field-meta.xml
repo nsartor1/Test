@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_Product_Vendor__c</fullName>
+    <externalId>false</externalId>
+    <label>Ship Product Vendor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATS</fullName>
+                <default>false</default>
+                <label>ATS</label>
+            </value>
+            <value>
+                <fullName>Aeroflo</fullName>
+                <default>false</default>
+                <label>Aeroflo</label>
+            </value>
+            <value>
+                <fullName>Arms Trucking</fullName>
+                <default>false</default>
+                <label>Arms Trucking</label>
+            </value>
+            <value>
+                <fullName>Beaver Materials</fullName>
+                <default>false</default>
+                <label>Beaver Materials</label>
+            </value>
+            <value>
+                <fullName>Beelman Trucking</fullName>
+                <default>false</default>
+                <label>Beelman Trucking</label>
+            </value>
+            <value>
+                <fullName>Diamond Pro</fullName>
+                <default>false</default>
+                <label>Diamond Pro</label>
+            </value>
+            <value>
+                <fullName>Fick</fullName>
+                <default>false</default>
+                <label>Fick</label>
+            </value>
+            <value>
+                <fullName>Kafka</fullName>
+                <default>false</default>
+                <label>Kafka</label>
+            </value>
+            <value>
+                <fullName>Kurtz</fullName>
+                <default>false</default>
+                <label>Kurtz</label>
+            </value>
+            <value>
+                <fullName>Liesener Soils</fullName>
+                <default>false</default>
+                <label>Liesener Soils</label>
+            </value>
+            <value>
+                <fullName>Madison Co Sand</fullName>
+                <default>false</default>
+                <label>Madison Co Sand</label>
+            </value>
+            <value>
+                <fullName>Mckinley Custom Sports</fullName>
+                <default>false</default>
+                <label>Mckinley Custom Sports</label>
+            </value>
+            <value>
+                <fullName>Meyers Sod Farm</fullName>
+                <default>false</default>
+                <label>Meyers Sod Farm</label>
+            </value>
+            <value>
+                <fullName>Mid Michigan Materials</fullName>
+                <default>false</default>
+                <label>Mid Michigan Materials</label>
+            </value>
+            <value>
+                <fullName>Payne Sod Farm</fullName>
+                <default>false</default>
+                <label>Payne Sod Farm</label>
+            </value>
+            <value>
+                <fullName>SAF</fullName>
+                <default>false</default>
+                <label>SAF</label>
+            </value>
+            <value>
+                <fullName>Shelby</fullName>
+                <default>false</default>
+                <label>Shelby</label>
+            </value>
+            <value>
+                <fullName>Waupaca</fullName>
+                <default>false</default>
+                <label>Waupaca</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

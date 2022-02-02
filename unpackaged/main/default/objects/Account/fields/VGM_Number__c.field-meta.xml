@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VGM_Number__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <externalId>true</externalId>
+    <inlineHelpText>The VGM Member Number if the Customer is an active VGM Member</inlineHelpText>
+    <label>VGM Number</label>
+    <length>10</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

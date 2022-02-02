@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Reps_Sports_Turf</fullName>
+    <columns>NAME</columns>
+    <columns>Sales_Rep_Num__c</columns>
+    <columns>Title__c</columns>
+    <columns>Primary_Location__c</columns>
+    <columns>Primary_Market__c</columns>
+    <columns>Budget_TM_Field__c</columns>
+    <columns>TM_JDT_Sales__c</columns>
+    <columns>JDT_Service_Open__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Market__c</field>
+        <operation>includes</operation>
+        <value>Sports Fields</value>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Active Reps - Sports Turf</label>
+    <sharedTo>
+        <group>Sales_Managers</group>
+        <group>Sports_Turf_Managers</group>
+        <role>HR_Manager</role>
+    </sharedTo>
+</ListView>

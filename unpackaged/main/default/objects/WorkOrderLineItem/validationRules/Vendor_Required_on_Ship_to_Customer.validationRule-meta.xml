@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor_Required_on_Ship_to_Customer</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Ship_Product_To__c, &quot;Customer&quot;),
+  ISBLANK(TEXT(Ship_Product_Vendor__c))
+)</errorConditionFormula>
+    <errorDisplayField>Ship_Product_Vendor__c</errorDisplayField>
+    <errorMessage>Please Select a Vendor for Product being Shipped Straight to the Customer</errorMessage>
+</ValidationRule>

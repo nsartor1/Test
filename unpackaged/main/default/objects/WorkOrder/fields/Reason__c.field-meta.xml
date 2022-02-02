@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Weather</fullName>
+                <default>false</default>
+                <label>Weather</label>
+            </value>
+            <value>
+                <fullName>Equipment - lack of</fullName>
+                <default>false</default>
+                <label>Equipment - lack of</label>
+            </value>
+            <value>
+                <fullName>Equipment - OOS</fullName>
+                <default>false</default>
+                <label>Equipment - OOS</label>
+            </value>
+            <value>
+                <fullName>Customer responsibilities not complete</fullName>
+                <default>false</default>
+                <label>Customer responsibilities not complete</label>
+            </value>
+            <value>
+                <fullName>Lack of product</fullName>
+                <default>false</default>
+                <label>Lack of product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

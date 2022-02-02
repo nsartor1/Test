@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Inv_Product__c</fullName>
+    <description>Non Inventory Product (product already on hand for use on the project)</description>
+    <externalId>false</externalId>
+    <label>Non-Inv. Product</label>
+    <summarizedField>WorkOrderLineItem.Extended_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Product_Code__c</field>
+        <operation>equals</operation>
+        <value>JDT-C-PRODUCT</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

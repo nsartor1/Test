@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Forecast__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used for monthly/annual forecast. We let reps put in the comments if the facility is closed. If so we run a report at the end of the month to get the values the update this field via dataloader.</description>
+    <externalId>false</externalId>
+    <label>No Forecast</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

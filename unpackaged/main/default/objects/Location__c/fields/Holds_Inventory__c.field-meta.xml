@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Holds_Inventory__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Signifies if this location holds inventory/has a warehouse at the location</description>
+    <externalId>false</externalId>
+    <label>Holds Inventory</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

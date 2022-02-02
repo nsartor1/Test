@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATS_Customers_w_Recent_Payments</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Contact_Person__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Sales_Rep__c</columns>
+    <columns>Class__c</columns>
+    <columns>Ship_Method__c</columns>
+    <columns>Payment_Terms__c</columns>
+    <columns>Last_Activity_Date__c</columns>
+    <columns>Last_Payment_Amount__c</columns>
+    <columns>Last_Payment_Date__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Sales_Rep__c</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>Last_Payment_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_FISCAL_YEAR</value>
+    </filters>
+    <filters>
+        <field>Payment_Terms__c</field>
+        <operation>notEqual</operation>
+        <value>COD/Cash,COD/CC,COD/CK</value>
+    </filters>
+    <label>ATS Customers w/ Recent Payments</label>
+    <sharedTo>
+        <group>Collections</group>
+    </sharedTo>
+</ListView>

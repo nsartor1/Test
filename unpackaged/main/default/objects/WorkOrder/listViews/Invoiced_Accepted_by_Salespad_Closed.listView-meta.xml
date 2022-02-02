@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoiced_Accepted_by_Salespad_Closed</fullName>
+    <columns>Name</columns>
+    <columns>Subject</columns>
+    <columns>Location</columns>
+    <columns>Account</columns>
+    <columns>Owner</columns>
+    <columns>Status</columns>
+    <columns>ERP_Sales_Doc__c</columns>
+    <columns>Product_Included__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ERP_Ready__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>ERP_Added__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Closed</value>
+    </filters>
+    <label>Invoiced: Accepted by Salespad/Closed</label>
+    <sharedTo>
+        <group>Field_Evaluation_Owner</group>
+    </sharedTo>
+</ListView>

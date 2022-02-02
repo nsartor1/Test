@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERP_Ready__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates the Work Order is ready to be transferred to ERP/Invoicing System</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the Work Order is ready to be transferred to ERP/Invoicing System</inlineHelpText>
+    <label>Salespad Ready?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

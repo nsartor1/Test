@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Accounts_Mailing_Preferences</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Primary_Mailing_Person__c</columns>
+    <columns>Primary_Mailing_Contact__c</columns>
+    <columns>Primary_Mailing_Street__c</columns>
+    <columns>Annual_Catalog__c</columns>
+    <columns>Early_Order_Postcard__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer</value>
+    </filters>
+    <filters>
+        <field>Inactive__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Customer__c</field>
+        <operation>notContain</operation>
+    </filters>
+    <label>My Customer Mailing Preferences</label>
+    <sharedTo>
+        <group>IT_Department</group>
+        <group>Sales_Reps</group>
+    </sharedTo>
+</ListView>

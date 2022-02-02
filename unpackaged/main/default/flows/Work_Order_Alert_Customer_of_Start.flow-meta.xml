@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Post_to_chatter</name>
+        <label>Post to chatter</label>
+        <locationX>1106</locationX>
+        <locationY>878</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>vChatterPostNormalSchedule</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Post_to_chatter_0</name>
+        <label>Post to chatter</label>
+        <locationX>1370</locationX>
+        <locationY>878</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>vChatterPostReschedule</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Post_to_chatter_reminder</name>
+        <label>Post to chatter</label>
+        <locationX>1634</locationX>
+        <locationY>878</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>vChatterPostReschedule</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Normal_Start</name>
+        <label>Send Normal Start</label>
+        <locationX>1106</locationX>
+        <locationY>758</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Post_to_chatter</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>vNormalStart</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!Get_Work_Order_Details.Contact.Email},{!Get_Work_Order_Details.Sales_Rep__r.Email__c} </stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>{!Get_Work_Order_Details.Area_Manager__r.Email}, {!Get_Work_Order_Details.Sales_Rep__r.Email__c}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Work Order Start</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Normal_Start_0</name>
+        <label>Send Normal Start</label>
+        <locationX>1370</locationX>
+        <locationY>758</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Post_to_chatter_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>vRescheduleEmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!Get_Work_Order_Details.Contact.Email}, {!Get_Work_Order_Details.Sales_Rep__r.Email__c}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>{!Get_Work_Order_Details.Area_Manager__r.Email}, {!Get_Work_Order_Details.Sales_Rep__r.Email__c}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Rescheduled Project Start Date</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Reminder_Start</name>
+        <label>Send Normal Start</label>
+        <locationX>1634</locationX>
+        <locationY>758</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Post_to_chatter_reminder</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>vReminderEmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!Get_Work_Order_Details.Contact.Email} , {!Get_Work_Order_Details.Sales_Rep__r.Email__c}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>{!Get_Work_Order_Details.Area_Manager__r.Email}, {!Get_Work_Order_Details.Sales_Rep__r.Email__c}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Reminder of Project Start Date </stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>51.0</apiVersion>
+    <choices>
+        <name>vNothing</name>
+        <choiceText>This is just an example and wont do anything.</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>vNothing</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>vReminder</name>
+        <choiceText>Reminder</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>vReminder</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>VReschedule</name>
+        <choiceText>Reschedule</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>vReschedule</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>vStartDate</name>
+        <choiceText>Alert customer of start date</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>vStartDate</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>No_Contact_Id_or_Area_Manager_Id</name>
+        <label>No Contact Id or Area Manager Id</label>
+        <locationX>1106</locationX>
+        <locationY>278</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_Contact_or_Area_Manager</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Work_Order_Details.Area_Manager__r.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Work_Order_Details.Contact.Email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>No_Contact_or_Area_Manager_Screen</targetReference>
+            </connector>
+            <label>No Contact or Area Manager</label>
+        </rules>
+        <rules>
+            <name>No_Contact</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Work_Order_Details.Contact.Email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>No_Contact_Email</targetReference>
+            </connector>
+            <label>No Contact Email</label>
+        </rules>
+        <rules>
+            <name>No_Area_Manager</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Work_Order_Details.Area_Manager__r.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>No_Area_Manager_Screen</targetReference>
+            </connector>
+            <label>No Area Manager</label>
+        </rules>
+        <rules>
+            <name>Target_Start_Date_Missing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Work_Order_Details.Target_Start_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Target_Start_Date_Missing2</targetReference>
+            </connector>
+            <label>Target Start Date Missing</label>
+        </rules>
+        <rules>
+            <name>Found_Info</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Work_Order_Details.Contact.Email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Work_Order_Details.Area_Manager__r.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>What_template_to_send</targetReference>
+            </connector>
+            <label>Found Info</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Template</name>
+        <label>What Template</label>
+        <locationX>1502</locationX>
+        <locationY>518</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Start_Date</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Please_Pick_a_template_to_send</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>vStartDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Review_Normal</targetReference>
+            </connector>
+            <label>Start Date</label>
+        </rules>
+        <rules>
+            <name>Reschedule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Please_Pick_a_template_to_send</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>VReschedule</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Review_Normal_0</targetReference>
+            </connector>
+            <label>Reschedule</label>
+        </rules>
+        <rules>
+            <name>Reminder</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Please_Pick_a_template_to_send</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>vReminder</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Review_Normal_0_0</targetReference>
+            </connector>
+            <label>Reminder</label>
+        </rules>
+    </decisions>
+    <description>Added Chatter post after email sent/Adding in reschedule option/Added reminder option</description>
+    <interviewLabel>Work Order: Alert Customer of Start {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Work Order: Alert Customer of Start</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Work_Order_Details</name>
+        <label>Get Work Order Details</label>
+        <locationX>1106</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>No_Contact_Id_or_Area_Manager_Id</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>WorkOrder</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>No_Area_Manager_Screen</name>
+        <label>No Area Manager</label>
+        <locationX>578</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>No_AM</name>
+            <fieldText>&lt;p&gt;I was unable to find an area manger. Please attach one to this work order then refresh the screen. &lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>No_Contact_Email</name>
+        <label>No Contact Email</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>No_Contact_Email_Warn</name>
+            <fieldText>&lt;p&gt;Hello, &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;I was unable to find an email address for the this contact: {!Get_Work_Order_Details.Contact.FirstName} {!Get_Work_Order_Details.Contact.LastName}. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please update that info below then refresh this page. &lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://advancedturf--ppchange.lightning.force.com/lightning/r/Contact/{!Get_Work_Order_Details.Contact.Id}/view&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://advancedturf--ppchange.lightning.force.com/lightning/r/Contact/{!Get_Work_Order_Details.Contact.Id}/view&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>No_Contact_or_Area_Manager_Screen</name>
+        <label>No Contact or Area Manager</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>All_Wrong</name>
+            <fieldText>&lt;p&gt;I was unable to find a contact email address or area manager. Please update both then refresh this screen. &lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Review_Normal</name>
+        <label>Review Normal</label>
+        <locationX>1106</locationX>
+        <locationY>638</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Send_Normal_Start</targetReference>
+        </connector>
+        <fields>
+            <name>Title_Review</name>
+            <fieldText>&lt;p&gt;Please Review the following info&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Date_of_scheduled_start</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <elementReference>Get_Work_Order_Details.Target_Start_Date__c</elementReference>
+            </defaultValue>
+            <fieldText>Date of scheduled start</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Email_Recipient_Info</name>
+            <fieldText>&lt;p&gt;Who is receiving the email:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Recipient: &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!Get_Work_Order_Details.Contact.FirstName} {!Get_Work_Order_Details.Contact.LastName}&lt;/span&gt;  -{!Get_Work_Order_Details.Contact.Email}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Sender: {!Get_Work_Order_Details.Area_Manager__r.Email}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;cc&#39;d: {!Get_Work_Order_Details.Sales_Rep__r.Email__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Clicking finish will send the email.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Review_Normal_0</name>
+        <label>Reschedule Screen</label>
+        <locationX>1370</locationX>
+        <locationY>638</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Send_Normal_Start_0</targetReference>
+        </connector>
+        <fields>
+            <name>Title_Review_0</name>
+            <fieldText>&lt;p&gt;Please Review the following info&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Date_of_Reschedule</name>
+            <dataType>Date</dataType>
+            <fieldText>Reschedule Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Email_Recipient_Info_0</name>
+            <fieldText>&lt;p&gt;Who is receiving the email:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Recipient: &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!Get_Work_Order_Details.Contact.FirstName} {!Get_Work_Order_Details.Contact.LastName}&lt;/span&gt;  -{!Get_Work_Order_Details.Contact.Email}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Sender: {!Get_Work_Order_Details.Area_Manager__r.Email}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;cc&#39;d: {!Get_Work_Order_Details.Sales_Rep__r.Email__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Clicking finish will send the email.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Review_Normal_0_0</name>
+        <label>Reschedule Screen</label>
+        <locationX>1634</locationX>
+        <locationY>638</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Send_Reminder_Start</targetReference>
+        </connector>
+        <fields>
+            <name>Title_Review_0_0</name>
+            <fieldText>&lt;p&gt;Please Review the following info&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Date_of_Reminder</name>
+            <dataType>Date</dataType>
+            <fieldText>Target Start Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Email_Recipient_Info_0_0</name>
+            <fieldText>&lt;p&gt;Who is receiving the email:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Recipient: &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!Get_Work_Order_Details.Contact.FirstName} {!Get_Work_Order_Details.Contact.LastName}&lt;/span&gt;  -{!Get_Work_Order_Details.Contact.Email}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Sender: {!Get_Work_Order_Details.Area_Manager__r.Email}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;cc&#39;d: {!Get_Work_Order_Details.Sales_Rep__r.Email__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Clicking finish will send the email.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Target_Start_Date_Missing2</name>
+        <label>Target Start Date Missing2</label>
+        <locationX>842</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>missingDate</name>
+            <fieldText>&lt;p&gt;I couldn&#39;t find a target start date. Please add one then refresh the screen. &lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>What_template_to_send</name>
+        <label>What template to send</label>
+        <locationX>1502</locationX>
+        <locationY>398</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>What_Template</targetReference>
+        </connector>
+        <fields>
+            <name>Title</name>
+            <fieldText>&lt;p&gt;Please Pick a template to send&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Please_Pick_a_template_to_send</name>
+            <choiceReferences>vStartDate</choiceReferences>
+            <choiceReferences>VReschedule</choiceReferences>
+            <choiceReferences>vReminder</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Please Pick a template to send</fieldText>
+            <fieldType>MultiSelectCheckboxes</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>980</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Work_Order_Details</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>vChatterPostNormalSchedule</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The following email was sent to the contact on the work order on {!$Flow.CurrentDate}
+
+{!vNormalStart}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>vChatterPostReminder</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The following email was sent to the contact on the work order on {!$Flow.CurrentDate}
+{!vReminderEmailBody}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>vChatterPostReschedule</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The following email was sent to the contact on the work order on {!$Flow.CurrentDate}
+{!vRescheduleEmailBody}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>vNormalStart</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Thank you for your order!
+Currently we are targeting {!Date_of_scheduled_start} for your project, {!Get_Work_Order_Details.Opportunity__r.Name}. However, there are many factors that can improve/extend this start date. I will be in contact with you prior to your target start date, so we can discuss your project specifics. Until then, please do not hesitate to reach out with any questions or concerns.
+Respectfully,
+{!Get_Work_Order_Details.Area_Manager__r.FirstName}  {!Get_Work_Order_Details.Area_Manager__r.LastName}{!Get_Work_Order_Details.Area_Manager__r.MobilePhone}
+{!Get_Work_Order_Details.Area_Manager__r.Email}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>vReminderEmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello - 
+Friendly reminder that we are still targeting {!Date_of_Reminder} for your project, {!Get_Work_Order_Details.Opportunity__r.Name}.  However, there are many factors that can improve/extend this start date.  I will be in contact with you prior to your target start date, so we can discuss your project specifics.  Until then, please do not hesitate to reach out with any questions or concerns. 
+
+Respectfully, 
+{!Get_Work_Order_Details.Area_Manager__r.FirstName} {!Get_Work_Order_Details.Area_Manager__r.LastName}
+cell: {!Get_Work_Order_Details.Area_Manager__r.MobilePhone}
+email: {!Get_Work_Order_Details.Area_Manager__r.Email}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>vRescheduleEmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello -
+Due to unforeseen circumstances we are now targeting a start date of {!Date_of_Reschedule} for your project, {!Get_Work_Order_Details.Opportunity__r.Name}. Your project is important to us, and will continue to communicate with you as your revised project start date nears. Untill then, please do not hesitate to reach out with any questions or concerns.
+Respectfully,
+{!Get_Work_Order_Details.Area_Manager__r.FirstName} {!Get_Work_Order_Details.Area_Manager__r.LastName}
+cell: {!Get_Work_Order_Details.Area_Manager__r.MobilePhone}
+email: {!Get_Work_Order_Details.Area_Manager__r.Email}</text>
+    </textTemplates>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

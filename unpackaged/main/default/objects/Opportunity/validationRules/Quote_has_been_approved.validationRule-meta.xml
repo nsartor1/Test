@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_has_been_approved</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Quote_Approved__c = True, 
+ ISCHANGED( Description) ,
+ ISCHANGED( Total_Amount__c ), 
+$User.LastName != &quot;Pruden&quot;,
+$User.LastName != &quot;Hancock&quot;,
+$User.LastName != &quot;Hephner&quot;,
+$User.LastName != &quot;O&#39;Grady&quot;, 
+$User.LastName != &quot;Kavanaugh&quot;)</errorConditionFormula>
+    <errorMessage>Quote has been approved you can&#39;t change scope</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATS_Shipping__c</fullName>
+    <description>The Total Shipping Amount of Work Order Lines</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Total Shipping Amount of Work Order Lines</inlineHelpText>
+    <label>ATS Shipping $</label>
+    <summarizedField>WorkOrderLineItem.Extended_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Product_Code__c</field>
+        <operation>contains</operation>
+        <value>ATS SHIPPING</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATS_Bulk_Product_Total__c</fullName>
+    <description>Sum of only &quot;Bulk&quot; ATS Products on the Work Order</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of only &quot;Bulk&quot; ATS Products on the Work Order</inlineHelpText>
+    <label>ATS Bulk Product $</label>
+    <summarizedField>WorkOrderLineItem.Extended_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.ATS_Bulk_Product__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

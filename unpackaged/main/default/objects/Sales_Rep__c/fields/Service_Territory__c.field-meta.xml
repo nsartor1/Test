@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Territory__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This will allow us to automate the work order creation some. We can set the area manager and area manager user field based off this. Look for process builder &#39;Work Order Automation&#39; for details</description>
+    <externalId>false</externalId>
+    <label>Service Territory</label>
+    <referenceTo>ServiceTerritory</referenceTo>
+    <relationshipLabel>Sales Reps</relationshipLabel>
+    <relationshipName>Sales_Reps</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

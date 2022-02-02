@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IF_Product_Delivery_Date_Required</fullName>
+    <active>true</active>
+    <description>If there is ats product on work order delivery date required by dispatcher</description>
+    <errorConditionFormula>AND(
+     ISPICKVAL(Status , &#39;Needs Scheduled&#39;) || ISPICKVAL(Status , 
+  &#39;Scheduled&#39;),
+     ATS_Product__c &gt; 0,
+     ISBLANK( Product_Delivery_Date__c )
+
+)</errorConditionFormula>
+    <errorMessage>If there is ATS Product on WO. Please enter Delivery Date</errorMessage>
+</ValidationRule>

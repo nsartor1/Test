@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collections_User__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The user in SF that is the manager for this Account - will receive Chatter and other notifications on releveant changes to the Account/Contacts</description>
+    <externalId>false</externalId>
+    <label>Collections User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Collection_Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

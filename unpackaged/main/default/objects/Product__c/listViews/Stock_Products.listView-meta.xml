@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stock_Products</fullName>
+    <columns>NAME</columns>
+    <columns>Product_Name__c</columns>
+    <columns>Description__c</columns>
+    <columns>Product_Family__c</columns>
+    <columns>Primary_Category__c</columns>
+    <columns>Subcategory__c</columns>
+    <columns>GP_Item_Class__c</columns>
+    <columns>Total_Qty_On_Hand__c</columns>
+    <columns>Ship_Weight__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Product_Status__c</field>
+        <operation>equals</operation>
+        <value>Stock</value>
+    </filters>
+    <label>ATS Stock Products</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

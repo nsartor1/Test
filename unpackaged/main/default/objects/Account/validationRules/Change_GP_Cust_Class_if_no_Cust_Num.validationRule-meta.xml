@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_GP_Cust_Class_if_no_Cust_Num</fullName>
+    <active>true</active>
+    <description>Allow reps to designate S Lead Accounts as GP Customer Class JDT</description>
+    <errorConditionFormula>AND(
+ NOT(ISBLANK(Customer__c )),
+ ISCHANGED( Class__c ),
+ $User.LastName != &#39;Pruden&#39;,
+ $User.LastName != &#39;Hephner&#39;
+)</errorConditionFormula>
+    <errorMessage>You are not authorized to change GP Class if customer # is not blank. Please contact IT.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stephen_Hanse_Accounts</fullName>
+    <columns>Sales_Rep__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <columns>Actual_FY_Sales__c</columns>
+    <columns>Actual_Last_FY_Sales__c</columns>
+    <columns>Last_Activity_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Sales_Rep__c</field>
+        <operation>contains</operation>
+        <value>Hansen</value>
+    </filters>
+    <filters>
+        <field>Inactive__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Hansen</value>
+    </filters>
+    <label>Stephen Hansen Accounts</label>
+    <sharedTo>
+        <group>IT_Department</group>
+        <group>Sales_Managers</group>
+    </sharedTo>
+</ListView>

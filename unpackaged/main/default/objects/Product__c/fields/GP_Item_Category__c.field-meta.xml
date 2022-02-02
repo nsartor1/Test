@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GP_Item_Category__c</fullName>
+    <description>The Item Category from GP (field USCATVLS_2 on Item Master joins to IV40600 which has the Item Category description).</description>
+    <externalId>false</externalId>
+    <label>GP Item Category</label>
+    <length>120</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

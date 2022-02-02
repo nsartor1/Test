@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>corporate_office_static_address__c</fullName>
+    <description>Used on the ATS Connect &quot;My ATS Team&quot; page and the Account Detail page layout for ATS Connect Customers.</description>
+    <externalId>false</externalId>
+    <formula>&quot;Advanced Turf Solutions&quot;&amp;
+BR()&amp;
+&quot;12955 Ford Dr.&quot;&amp;
+BR()&amp;
+&quot;Fishers, IN 46038&quot;&amp;
+BR()&amp;
+&quot;Phone: 877-433-7037&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Corporate Office</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

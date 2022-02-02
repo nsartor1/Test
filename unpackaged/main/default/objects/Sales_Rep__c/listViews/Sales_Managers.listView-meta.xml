@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Managers</fullName>
+    <columns>Sales_Rep_Num__c</columns>
+    <columns>NAME</columns>
+    <columns>Email__c</columns>
+    <columns>Title__c</columns>
+    <columns>Primary_Location__c</columns>
+    <columns>Mobile__c</columns>
+    <columns>Manager__c</columns>
+    <columns>Primary_Market__c</columns>
+    <columns>Primary_Collections_Manager__c</columns>
+    <columns>House_on_Sales_Analysis__c</columns>
+    <columns>Purchaser__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>contains</operation>
+        <value>Sales Manager,Director</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>OWNER.ALIAS</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>Primary_Location__c</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Sales_Rep__c.Default</value>
+    </filters>
+    <label>Sales Managers</label>
+    <sharedTo>
+        <group>IT_Department</group>
+        <group>Sales_Managers</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Open_Work_Orders_STL</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Owner</columns>
+    <columns>Priority</columns>
+    <columns>Target_Start_Date__c</columns>
+    <columns>StartDate</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>notEqual</operation>
+        <value>New,Needs Scheduled,Completed,Closed,Canceled</value>
+    </filters>
+    <filters>
+        <field>Location</field>
+        <operation>contains</operation>
+        <value>STL</value>
+    </filters>
+    <filters>
+        <field>Subject</field>
+        <operation>contains</operation>
+        <value>STL</value>
+    </filters>
+    <label>Open Work Orders - STL</label>
+</ListView>

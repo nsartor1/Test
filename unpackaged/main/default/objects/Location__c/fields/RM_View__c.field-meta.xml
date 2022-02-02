@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RM_View__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Regional_Manager__r.Id =  $User.Id , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>RM View</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

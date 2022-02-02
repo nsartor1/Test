@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Collections_Note__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>From GP Collections, the most recent note activity</inlineHelpText>
+    <label>Last Collections Note</label>
+    <length>32768</length>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

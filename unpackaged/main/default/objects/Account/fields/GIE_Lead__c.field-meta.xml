@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GIE_Lead__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mass loaded cleaned up leads from GIE then mass imported new &#39;leads&#39; as accounts so management could send to reps</description>
+    <externalId>false</externalId>
+    <label>GIE Lead</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Chemicals</fullName>
+        <default>false</default>
+        <label>Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Equipment</fullName>
+        <default>false</default>
+        <label>Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Fertilizer</fullName>
+        <default>false</default>
+        <label>Fertilizer</label>
+    </customValue>
+    <customValue>
+        <fullName>Foliar-Pak</fullName>
+        <default>false</default>
+        <label>Foliar-Pak</label>
+    </customValue>
+    <customValue>
+        <fullName>Ice Melt</fullName>
+        <default>false</default>
+        <label>Ice Melt</label>
+    </customValue>
+    <customValue>
+        <fullName>Infield Products</fullName>
+        <default>false</default>
+        <label>Infield Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Sand</fullName>
+        <default>false</default>
+        <label>Sand</label>
+    </customValue>
+    <customValue>
+        <fullName>Seed</fullName>
+        <default>false</default>
+        <label>Seed</label>
+    </customValue>
+    <customValue>
+        <fullName>Sports Turf</fullName>
+        <default>false</default>
+        <label>Sports Turf</label>
+    </customValue>
+    <customValue>
+        <fullName>Steel Green</fullName>
+        <default>false</default>
+        <label>Steel Green</label>
+    </customValue>
+    <customValue>
+        <fullName>Tools &amp; Accessories</fullName>
+        <default>false</default>
+        <label>Tools &amp; Accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>Raw Materials</fullName>
+        <default>false</default>
+        <label>Raw Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Uncategorized</fullName>
+        <default>true</default>
+        <label>Uncategorized</label>
+    </customValue>
+    <description>Primary Product Categories on ATS Website</description>
+    <masterLabel>Web Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

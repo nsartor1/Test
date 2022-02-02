@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Catalog_Pref</fullName>
+    <availability>online</availability>
+    <description>Update Catalog/Mailing Preferences for one ore many Customer Accounts</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Update Catalog Pref.</masterLabel>
+    <openType>sidebar</openType>
+    <page>AccountListViewEditMailingPref</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

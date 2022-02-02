@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_Change_Package_Product_Cost</fullName>
+    <active>false</active>
+    <description>Prevent user from accidentally changing package product cost</description>
+    <errorConditionFormula>AND(ISPICKVAL(PricebookEntry.Product2.Product_Category__c ,&#39;Packaged Product&#39; ),
+ ISCHANGED(Cost__c)  )</errorConditionFormula>
+    <errorMessage>You can&#39;t update a package product cost</errorMessage>
+</ValidationRule>

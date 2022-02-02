@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Reason__c</fullName>
+    <description>Torrent failed to create this field in Production even though it was created in Sandbox and used on Report Type &quot;Work Orders with Service Appointments&quot; that was the basis for all their custom reports - used on Home Pages, etc</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Reason__c)</formula>
+    <label>Status Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

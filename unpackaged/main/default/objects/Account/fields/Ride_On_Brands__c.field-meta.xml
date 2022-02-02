@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ride_On_Brands__c</fullName>
+    <description>Different Ride on Brands used by the Account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Which Ride On Brands do they use?</inlineHelpText>
+    <label>Ride On Brands</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

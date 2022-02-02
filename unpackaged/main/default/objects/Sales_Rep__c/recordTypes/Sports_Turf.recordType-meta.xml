@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sports_Turf</fullName>
+    <active>true</active>
+    <label>Sports Turf</label>
+    <picklistValues>
+        <picklist>ENP_Rep__c</picklist>
+        <values>
+            <fullName>Curt Geron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>John Gruneisen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fiscal_Year__c</picklist>
+        <values>
+            <fullName>Calendar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Market__c</picklist>
+        <values>
+            <fullName>Golf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports Fields</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turf and Ornamental</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

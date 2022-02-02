@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Validated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the cost has been validated before sending to Salespad for Invoicing</description>
+    <externalId>false</externalId>
+    <label>Cost Validated?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

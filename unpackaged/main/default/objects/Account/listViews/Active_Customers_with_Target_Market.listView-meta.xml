@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Customers_with_Target_Market</fullName>
+    <columns>Sales_Rep__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Target_Market__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Inactive__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer</value>
+    </filters>
+    <filters>
+        <field>Customer_Name__c</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>Customer__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Customer__c</field>
+        <operation>notContain</operation>
+        <value>-S-,XM</value>
+    </filters>
+    <filters>
+        <field>Sales_Rep__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE</field>
+        <operation>equals</operation>
+        <value>IN</value>
+    </filters>
+    <label>Active Customers with Target Market</label>
+    <sharedTo>
+        <group>IT_Department</group>
+        <group>Sales_Managers</group>
+    </sharedTo>
+</ListView>

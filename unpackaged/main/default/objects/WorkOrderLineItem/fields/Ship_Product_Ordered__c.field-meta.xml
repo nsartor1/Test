@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_Product_Ordered__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Will be checked by the SmartConnect job if successfully created Sales Order for this Work Order Product</description>
+    <externalId>false</externalId>
+    <label>Ship Product Ordered</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

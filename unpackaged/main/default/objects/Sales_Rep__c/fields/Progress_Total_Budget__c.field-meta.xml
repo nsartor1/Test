@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Progress_Total_Budget__c</fullName>
+    <description>Progress YTD Amounts on Monthly Management Budget (will not include Current Month)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Progress YTD Amounts on Monthly Management Budget (will not include Current Month)</inlineHelpText>
+    <label>YTD Progress</label>
+    <summarizedField>Sales_Goal__c.Progress_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Sales_Goal__c.Customer__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Sales_Goal__c.Product__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Sales_Goal__c.Budget_Type__c</field>
+        <operation>equals</operation>
+        <value>Monthly Sales</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Sales_Goal__c.Focus_Product_Category__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Sales_Goal__c.Inactive__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Sales_Goal__c.Sales_Rep__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

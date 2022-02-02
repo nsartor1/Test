@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>28/44/Gold (Golf)</fullName>
+        <default>false</default>
+        <label>28/44/Gold (Golf)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bentgrass</fullName>
+        <default>false</default>
+        <label>Bentgrass (Golf)</label>
+    </customValue>
+    <customValue>
+        <fullName>Foliar-Pak</fullName>
+        <default>false</default>
+        <label>Foliar-Pak (Golf)</label>
+    </customValue>
+    <customValue>
+        <fullName>TMI/ZOXY/Rotator (Golf)</fullName>
+        <default>false</default>
+        <label>TMI/ZOXY/Rotator (Golf)</label>
+    </customValue>
+    <customValue>
+        <fullName>ENP/Holganix</fullName>
+        <default>false</default>
+        <label>ENP (LTO)</label>
+    </customValue>
+    <customValue>
+        <fullName>Herbicides</fullName>
+        <default>false</default>
+        <label>Herbicides (LTO)</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Labs</fullName>
+        <default>false</default>
+        <label>Precision Labs (LTO)</label>
+    </customValue>
+    <customValue>
+        <fullName>Seed_LTO</fullName>
+        <default>false</default>
+        <label>Seed (LTO)</label>
+    </customValue>
+    <customValue>
+        <fullName>SAF</fullName>
+        <default>false</default>
+        <label>SAF (KY/TN)</label>
+    </customValue>
+    <customValue>
+        <fullName>Foliar-Pak (Sports)</fullName>
+        <default>false</default>
+        <label>Foliar-Pak (Sports)</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Labs (Sports)</fullName>
+        <default>false</default>
+        <label>Precision Labs (Sports)</label>
+    </customValue>
+    <customValue>
+        <fullName>InFlow (Sports)</fullName>
+        <default>false</default>
+        <label>InFlow (Sports)</label>
+    </customValue>
+    <customValue>
+        <fullName>Infield Conditioners (Sports)</fullName>
+        <default>false</default>
+        <label>Infield Conditioners (Sports)</label>
+    </customValue>
+    <customValue>
+        <fullName>Enineered Infield Soils (SAF/AES)</fullName>
+        <default>false</default>
+        <label>Engineered Infield Soils (SAF/AES)</label>
+    </customValue>
+    <customValue>
+        <fullName>Armortech</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Armortech (Golf)</label>
+    </customValue>
+    <customValue>
+        <fullName>AT 28/44</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>AT 28/44 (Golf)</label>
+    </customValue>
+    <customValue>
+        <fullName>Holganix</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Holganix (Inactive)</label>
+    </customValue>
+    <customValue>
+        <fullName>PinPoint</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PinPoint (Inactive)</label>
+    </customValue>
+    <customValue>
+        <fullName>Lebanon</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lebanon (Inactive)</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthy Grow</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Healthy Grow (LTO)</label>
+    </customValue>
+    <customValue>
+        <fullName>LEP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LEP</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthy Grow (Golf)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Healthy Grow (Inactive)</label>
+    </customValue>
+    <masterLabel>Focus Product Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

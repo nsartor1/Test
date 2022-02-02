@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>One_Markup_Type</fullName>
+    <active>true</active>
+    <description>You can only use Markup Currency or Markup Percent.</description>
+    <errorConditionFormula>!ISBLANK(Markup__c) &amp;&amp; !ISBLANK(Markup_Percent__c)</errorConditionFormula>
+    <errorMessage>You may only have either the currency Markup or the Percent Markup used to define the cost, not both. Please remove one in order to save.</errorMessage>
+</ValidationRule>

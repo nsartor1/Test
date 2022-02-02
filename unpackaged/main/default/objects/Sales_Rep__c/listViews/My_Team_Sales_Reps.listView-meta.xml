@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Team_Sales_Reps</fullName>
+    <columns>Sales_Rep_Num__c</columns>
+    <columns>NAME</columns>
+    <columns>Title__c</columns>
+    <columns>Primary_Location__c</columns>
+    <columns>YTD_Budget__c</columns>
+    <columns>Progress_Total_Budget__c</columns>
+    <columns>Active_Monthly_Budget__c</columns>
+    <columns>TM_ATS_Sales__c</columns>
+    <columns>Current_Month_Open_Orders__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>Primary_Location__c</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>Manager_User__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Team Sales Reps</label>
+    <sharedTo>
+        <group>Sales_Managers</group>
+    </sharedTo>
+</ListView>

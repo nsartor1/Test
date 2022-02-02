@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Rep_Market_s__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(Sales_Rep__r.Primary_Market__c)</formula>
+    <inlineHelpText>The Primary Target Market of this Account&#39;s Sales Rep</inlineHelpText>
+    <label>Sales Rep Market(s)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

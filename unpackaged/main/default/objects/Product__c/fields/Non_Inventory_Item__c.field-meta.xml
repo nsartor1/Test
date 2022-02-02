@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Inventory_Item__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Product not held in inventory but still needed for sales document line items</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Product not held in inventory but still needed for sales document line items</inlineHelpText>
+    <label>Non Inventory Item</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

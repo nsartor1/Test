@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Accounts_w_Unsigned_B_H_Agreements</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Sales_Rep__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Last_Activity_Date__c</columns>
+    <columns>Storage_Agreement_Signed__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Inactive__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer,Account.Lead</value>
+    </filters>
+    <filters>
+        <field>Storage_Agreement_Signed__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>EOP_Storage_Agreement__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Accounts w/ Unsigned B/H Agreements</label>
+    <sharedTo>
+        <group>Facility_Managers</group>
+        <group>IT_Department</group>
+        <group>Regional_Managers</group>
+        <group>Sales_Managers</group>
+        <group>Sales_Reps</group>
+    </sharedTo>
+</ListView>

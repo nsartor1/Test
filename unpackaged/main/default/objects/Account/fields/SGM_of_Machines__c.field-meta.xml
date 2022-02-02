@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGM_of_Machines__c</fullName>
+    <description>Steel Green Manufacturing - # of Machines Ordered (Sum of Closed Won Machine Opportunities)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Steel Green Manufacturing - # of Machines Ordered (Sum of Closed Won Machine Opportunities)</inlineHelpText>
+    <label>SGM # of Machines</label>
+    <summarizedField>Opportunity.SGM_Quantity__c</summarizedField>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

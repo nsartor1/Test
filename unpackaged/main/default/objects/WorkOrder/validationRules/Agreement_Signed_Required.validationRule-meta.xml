@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Signed_Required</fullName>
+    <active>true</active>
+    <description>Is required, If SubcontractedWork is checked</description>
+    <errorConditionFormula>AND(
+				 Subcontracted_Work__c,
+				 !Agreement_Signed__c
+)</errorConditionFormula>
+    <errorMessage>Agreement Signed Is required, if Subcontracted Work is checked</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JDT_Non_ATS_Product_or_Supply</fullName>
+    <active>true</active>
+    <description>In order to add this as an opportunity item you must provide a description</description>
+    <errorConditionFormula>AND(CONTAINS(Product2.Name,&#39;JDT-Non ATS Product or Supply&#39;),
+OR( 
+ISBLANK(Description),
+ISBLANK( Cost__c ) 
+)
+)</errorConditionFormula>
+    <errorMessage>To save this item you must provide a COST and DESCRIPTION</errorMessage>
+</ValidationRule>

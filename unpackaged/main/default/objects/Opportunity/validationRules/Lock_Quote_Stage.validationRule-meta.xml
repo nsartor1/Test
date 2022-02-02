@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Quote_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Quote_Stage__c , &#39;In Review&#39;),
+$User.LastName != &quot;Pruden&quot;,
+$User.LastName != &quot;Hancock&quot;,
+$User.LastName != &quot;Hephner&quot;,
+$User.LastName != &quot;O&#39;Grady&quot;,  
+$User.LastName != &quot;Kavanaugh&quot;,
+$User.LastName != &quot;Sage&quot;)</errorConditionFormula>
+    <errorMessage>You cannot change to this status</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EOP_Eligible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This product are in Price Book Master- 2020 Early Order Price Book (September)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This product is in Price Book Master- 2020 Early Order Price Book (September)</inlineHelpText>
+    <label>EOP Eligible?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_and_Ship_To_Type_Required</fullName>
+    <active>false</active>
+    <description>Require that address and ship to type is selected before work order can be set to status of scheduled or in progress</description>
+    <errorConditionFormula>AND( ISPICKVAL(Status , &#39;Needs Scheduled&#39;) || ISPICKVAL(Status , &#39;Scheduled&#39;),
+ISBLANK( Text(Ship_To_Type__c) ) ||
+ISBLANK( Address )
+)</errorConditionFormula>
+    <errorMessage>Before this status Ship To Type and Address must be filled in</errorMessage>
+</ValidationRule>

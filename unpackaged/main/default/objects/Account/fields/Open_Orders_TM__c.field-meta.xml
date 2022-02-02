@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Orders_TM__c</fullName>
+    <description>Total Open Orders with a Requested Ship Date in the Current Month (or Earlier)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total Open Orders with a Requested Ship Date in the Current Month (or Earlier)</inlineHelpText>
+    <label>Open Orders TM</label>
+    <summarizedField>Open_Order__c.Product_Only__c</summarizedField>
+    <summaryFilterItems>
+        <field>Open_Order__c.Req_Ship_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>1/31/2022</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Open_Order__c.Customer__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

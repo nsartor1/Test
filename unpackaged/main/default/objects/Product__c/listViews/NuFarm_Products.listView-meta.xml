@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NuFarm_Products</fullName>
+    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Product_Code__c</columns>
+    <columns>Product_Name__c</columns>
+    <columns>Product_Status__c</columns>
+    <columns>Product_Family__c</columns>
+    <columns>GP_Qty_On_Hand__c</columns>
+    <columns>GP_Item_Class__c</columns>
+    <columns>Active__c</columns>
+    <columns>Total_Qty_On_Hand__c</columns>
+    <columns>Number_of_Sites_with_Qty__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Product_Code__c</field>
+        <operation>startsWith</operation>
+        <value>RV</value>
+    </filters>
+    <filters>
+        <field>Product_Code__c</field>
+        <operation>startsWith</operation>
+        <value>VA</value>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Products by Vendor - NuFarm</label>
+    <sharedTo>
+        <group>Sales_Managers</group>
+        <group>Sales_Reps</group>
+        <role>Marketing_Manager</role>
+        <role>Sales_Manager</role>
+    </sharedTo>
+</ListView>

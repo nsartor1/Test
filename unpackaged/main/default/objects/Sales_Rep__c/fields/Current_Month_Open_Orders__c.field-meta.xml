@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Month_Open_Orders__c</fullName>
+    <description>Open orders with Requested Ship Date of the current month</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Open orders with Requested Ship Date of the current month</inlineHelpText>
+    <label>Open Orders TM</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

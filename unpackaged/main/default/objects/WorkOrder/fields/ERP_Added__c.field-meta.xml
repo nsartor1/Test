@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERP_Added__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates the Work Order was successfully moved to ERP/Invoicing System to Begin Billing Process</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the Work Order was successfully moved to ERP/Invoicing System to Begin Billing Process</inlineHelpText>
+    <label>Salespad Added?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

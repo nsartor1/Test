@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seed</fullName>
+    <columns>NAME</columns>
+    <columns>Product_Name__c</columns>
+    <columns>GP_Item_Category__c</columns>
+    <columns>Product_Status__c</columns>
+    <columns>Primary_Category__c</columns>
+    <columns>Total_Qty_Available__c</columns>
+    <columns>Total_Open_Units__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>GP_Item_Class__c</field>
+        <operation>equals</operation>
+        <value>Seed</value>
+    </filters>
+    <filters>
+        <field>Product_Status__c</field>
+        <operation>equals</operation>
+        <value>Stock,Limited,Exempt</value>
+    </filters>
+    <label>Seed</label>
+</ListView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATS_Bagged_Product_Total__c</fullName>
+    <description>Sum of only &quot;Bagged&quot; ATS Products on the Work Order (Not Bulk)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of only &quot;Bagged&quot; ATS Products on the Work Order (Not Bulk)</inlineHelpText>
+    <label>ATS Bagged Product $</label>
+    <summarizedField>WorkOrderLineItem.Extended_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.ATS_Bulk_Product__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Product_Code__c</field>
+        <operation>notContain</operation>
+        <value>JDT</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Product_Code__c</field>
+        <operation>notContain</operation>
+        <value>ATS SHIPPING</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

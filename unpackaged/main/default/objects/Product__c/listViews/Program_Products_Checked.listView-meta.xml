@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Products_Checked</fullName>
+    <columns>NAME</columns>
+    <columns>Product_Name__c</columns>
+    <columns>Website_Category__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>Ship_Weight__c</columns>
+    <columns>X1_Gallon_Weight__c</columns>
+    <columns>Total_Qty_On_Hand__c</columns>
+    <columns>Analysis__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Include_in_Programs__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Dry,Liquid</value>
+    </filters>
+    <filters>
+        <field>Analysis__c</field>
+        <operation>contains</operation>
+    </filters>
+    <label>Program Products</label>
+</ListView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zero_Dollar_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Actual_Last_FY_Sales__c</columns>
+    <columns>Total_Sales_Two_Years_Ago__c</columns>
+    <columns>Account_Status__c</columns>
+    <columns>Loss_Reason__c</columns>
+    <columns>Additional_Notes__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer</value>
+    </filters>
+    <filters>
+        <field>Actual_Last_FY_Sales__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Inactive__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Closed,do not use,collections</value>
+    </filters>
+    <label>Zero Dollar Accounts</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storage_Agreement_Signed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates we have received a Conga Sign document back from the Customer with a signature for the EOP Storage Agreement</description>
+    <externalId>false</externalId>
+    <label>Storage Agreement Signed?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Map_It</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Map It</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/apex/maps__maps?recordId={!Account.Id}&amp;baseObjectId=a392M000003AXMSQA4&amp;tooltipField=Name&amp;tooltipField2=Sales_Rep__c&amp;tooltipField3=Phone&amp;tooltipField4=Actual_Last_FY_Sales__c&amp;tooltipField5=Actual_FY_Sales__c&amp;tooltipField6=Last_Activity_Date__c&amp;zoom=16&amp;color=%2366FF00</url>
+</WebLink>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Margin_Editability</fullName>
+    <active>true</active>
+    <description>Defines which Product Categories are able to be have Markup edited, and which are not.</description>
+    <errorConditionFormula>(!ISNULL(Markup__c) || !ISNULL(Markup_Percent__c)) &amp;&amp; (ISPICKVAL( Product2.Product_Category__c , &quot;Travel - Lodging&quot;) || ISPICKVAL( Product2.Product_Category__c , &quot;Packaged Product&quot;) || ISPICKVAL( Product2.Product_Category__c , &quot;Service&quot;) || ISPICKVAL( Product2.Product_Category__c , &quot;Travel - Mileage&quot;) || ISPICKVAL( Product2.Product_Category__c , &quot;Labor&quot;))</errorConditionFormula>
+    <errorMessage>Markup cannot be edited on this product.</errorMessage>
+</ValidationRule>

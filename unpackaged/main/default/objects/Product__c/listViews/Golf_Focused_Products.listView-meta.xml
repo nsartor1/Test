@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Golf_Focused_Products</fullName>
+    <columns>Product_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>Focus_Product_Category__c</columns>
+    <columns>Focus_Product_Group__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Focus_Product_Group__c</field>
+        <operation>includes</operation>
+        <value>Golf</value>
+    </filters>
+    <filters>
+        <field>Focus_Product_Category__c</field>
+        <operation>includes</operation>
+        <value>28/44/Gold (Golf),Bentgrass,Foliar-Pak,TMI/ZOXY/Rotator (Golf)</value>
+    </filters>
+    <label>Golf Focused Products</label>
+    <sharedTo>
+        <group>ATS_Sports_Turf_HQ</group>
+        <group>Collections</group>
+        <group>Counter_Sales</group>
+        <group>Facility_Managers</group>
+        <group>Sales_Managers</group>
+        <group>Sales_Reps</group>
+        <role>HR_Manager</role>
+        <role>Marketing_Manager</role>
+        <role>Sales_Manager</role>
+    </sharedTo>
+</ListView>

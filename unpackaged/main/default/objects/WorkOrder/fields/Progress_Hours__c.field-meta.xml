@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Progress_Hours__c</fullName>
+    <description>Service Hours Completed So Far (Updated by Roll-Up Helper)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Service Hours Completed So Far</inlineHelpText>
+    <label>Progress Hours</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

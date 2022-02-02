@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Do_Not_Mail__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Syncs with &#39;Do Not Mail&#39; flag as set in GP/Salespad - Customer can change in ATS Connect (Alerts Credit and Rep)</description>
+    <externalId>false</externalId>
+    <label>Paperless Invoices</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

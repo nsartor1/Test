@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Signer__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>The Contact at this Account that will be the Signer for CongaSign documents</description>
+    <externalId>false</externalId>
+    <label>Approved Signer</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Please Choose a Contact from the current Account</errorMessage>
+        <filterItems>
+            <field>Contact.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Accounts (Approved Signer)</relationshipLabel>
+    <relationshipName>SignAccounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

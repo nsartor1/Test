@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Alligare</fullName>
+        <default>false</default>
+        <label>Alligare</label>
+    </customValue>
+    <customValue>
+        <fullName>AMVAC</fullName>
+        <default>false</default>
+        <label>AMVAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Andersons</fullName>
+        <default>false</default>
+        <label>Andersons</label>
+    </customValue>
+    <customValue>
+        <fullName>Aquatrols</fullName>
+        <default>false</default>
+        <label>Aquatrols</label>
+    </customValue>
+    <customValue>
+        <fullName>ArmorTech</fullName>
+        <default>false</default>
+        <label>ArmorTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Barenbrug</fullName>
+        <default>false</default>
+        <label>Barenbrug</label>
+    </customValue>
+    <customValue>
+        <fullName>BASF</fullName>
+        <default>false</default>
+        <label>BASF</label>
+    </customValue>
+    <customValue>
+        <fullName>Bayer</fullName>
+        <default>false</default>
+        <label>Bayer</label>
+    </customValue>
+    <customValue>
+        <fullName>Brandt</fullName>
+        <default>false</default>
+        <label>Brandt</label>
+    </customValue>
+    <customValue>
+        <fullName>Corteva</fullName>
+        <default>false</default>
+        <label>Corteva</label>
+    </customValue>
+    <customValue>
+        <fullName>Dow AgroSciences</fullName>
+        <default>false</default>
+        <label>Dow AgroSciences</label>
+    </customValue>
+    <customValue>
+        <fullName>E.C. Grow</fullName>
+        <default>false</default>
+        <label>E.C. Grow</label>
+    </customValue>
+    <customValue>
+        <fullName>FMC</fullName>
+        <default>false</default>
+        <label>FMC</label>
+    </customValue>
+    <customValue>
+        <fullName>FoliarPak</fullName>
+        <default>false</default>
+        <label>FoliarPak</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthy Grow</fullName>
+        <default>false</default>
+        <label>Healthy Grow</label>
+    </customValue>
+    <customValue>
+        <fullName>Holganix</fullName>
+        <default>false</default>
+        <label>Holganix</label>
+    </customValue>
+    <customValue>
+        <fullName>House</fullName>
+        <default>false</default>
+        <label>House</label>
+    </customValue>
+    <customValue>
+        <fullName>L.T. Rich</fullName>
+        <default>false</default>
+        <label>L.T. Rich</label>
+    </customValue>
+    <customValue>
+        <fullName>Lebanon</fullName>
+        <default>false</default>
+        <label>Lebanon</label>
+    </customValue>
+    <customValue>
+        <fullName>Linemark International</fullName>
+        <default>false</default>
+        <label>Linemark International</label>
+    </customValue>
+    <customValue>
+        <fullName>Nufarm</fullName>
+        <default>false</default>
+        <label>Nufarm</label>
+    </customValue>
+    <customValue>
+        <fullName>PBI-Gordon</fullName>
+        <default>false</default>
+        <label>PBI-Gordon</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Laboratories</fullName>
+        <default>false</default>
+        <label>Precision Laboratories</label>
+    </customValue>
+    <customValue>
+        <fullName>Quali-Pro</fullName>
+        <default>false</default>
+        <label>Quali-Pro</label>
+    </customValue>
+    <customValue>
+        <fullName>Quest Products</fullName>
+        <default>false</default>
+        <label>Quest Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Rotam</fullName>
+        <default>false</default>
+        <label>Rotam</label>
+    </customValue>
+    <customValue>
+        <fullName>SePRO</fullName>
+        <default>false</default>
+        <label>SePRO</label>
+    </customValue>
+    <customValue>
+        <fullName>Sipcam</fullName>
+        <default>false</default>
+        <label>Sipcam</label>
+    </customValue>
+    <customValue>
+        <fullName>Spring Valley</fullName>
+        <default>false</default>
+        <label>Spring Valley</label>
+    </customValue>
+    <customValue>
+        <fullName>Spyker</fullName>
+        <default>false</default>
+        <label>Spyker</label>
+    </customValue>
+    <customValue>
+        <fullName>Steel Green</fullName>
+        <default>false</default>
+        <label>Steel Green</label>
+    </customValue>
+    <customValue>
+        <fullName>Turf Care Supply</fullName>
+        <default>false</default>
+        <label>Turf Care Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>Turf Max</fullName>
+        <default>false</default>
+        <label>Turf Max</label>
+    </customValue>
+    <customValue>
+        <fullName>Curve-Rite</fullName>
+        <default>false</default>
+        <label>Curve-Rite</label>
+    </customValue>
+    <customValue>
+        <fullName>Oberfields</fullName>
+        <default>false</default>
+        <label>Oberfields</label>
+    </customValue>
+    <customValue>
+        <fullName>Techniseal</fullName>
+        <default>false</default>
+        <label>Techniseal</label>
+    </customValue>
+    <customValue>
+        <fullName>Techo</fullName>
+        <default>false</default>
+        <label>Techo</label>
+    </customValue>
+    <customValue>
+        <fullName>Unilock</fullName>
+        <default>false</default>
+        <label>Unilock</label>
+    </customValue>
+    <customValue>
+        <fullName>Belgard</fullName>
+        <default>false</default>
+        <label>Belgard</label>
+    </customValue>
+    <customValue>
+        <fullName>Nicolock</fullName>
+        <default>false</default>
+        <label>Nicolock</label>
+    </customValue>
+    <masterLabel>Product Family</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

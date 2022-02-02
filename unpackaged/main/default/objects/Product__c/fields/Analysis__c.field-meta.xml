@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Analysis__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( N__c &gt; 0 || P__c &gt; 0 || K__c &gt; 0,TEXT(NULLVALUE(N__c,0)*100) + &#39;-&#39; + TEXT(NULLVALUE(P__c,0)*100) + &#39;-&#39; + TEXT(NULLVALUE(K__c,0)*100),&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Analysis</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

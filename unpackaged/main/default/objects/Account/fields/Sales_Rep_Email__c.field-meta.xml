@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Rep_Email__c</fullName>
+    <description>The Email Address of the Primary Sales Rep for this Account (used by Conga Sign)</description>
+    <externalId>false</externalId>
+    <formula>Sales_Rep__r.Email__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sales Rep Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

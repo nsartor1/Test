@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Associate_User__c</fullName>
+    <description>Indicates the Current User is the Associate Rep for this Account</description>
+    <externalId>false</externalId>
+    <formula>Associate_Rep__r.Rep_User__c = True</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Associate User?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

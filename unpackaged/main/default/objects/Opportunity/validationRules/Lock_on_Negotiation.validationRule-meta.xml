@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_on_Negotiation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(Priorvalue(StageName), &#39;Negotiation(90%)&#39;),
+NOT( ISPICKVAL(StageName, &#39;Closed Lost&#39;) || ISPICKVAL(StageName, &#39;Closed Won&#39;) || ISCHANGED(Customer_PO__c ) ),
+ $User.LastName != &#39;Pruden&#39;, 
+ $User.LastName  != &quot;Hancock&quot;,
+ $User.LastName != &quot;Hephner&quot;,
+ $User.LastName != &quot;O&#39;Grady&quot;,
+ $User.LastName != &quot;Sage&quot;, 
+ $User.LastName != &#39;Kavanaugh&#39;)</errorConditionFormula>
+    <errorMessage>You are not authorized to make changes while Opportunity is in Negotiation</errorMessage>
+</ValidationRule>

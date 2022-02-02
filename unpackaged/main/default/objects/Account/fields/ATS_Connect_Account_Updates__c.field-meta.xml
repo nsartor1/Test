@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATS_Connect_Account_Updates__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flags the Account as needed to be synced with GP/Salespad, because something on the Account that can be edited by Customer has changed (Billing Address, Paperless Invoice Sign Up, Tax ID, Pesticide License, etc)</description>
+    <externalId>false</externalId>
+    <label>ATS Connect Account Updates</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

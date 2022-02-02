@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cat_Rank__c</fullName>
+    <description>Used in reports. Shows product ranking in terms of Extended Price Sales in PREV FY</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Shows product ranking in terms of total extended price in prev. FY</inlineHelpText>
+    <label>Cat Rank</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

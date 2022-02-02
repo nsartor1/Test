@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salespad_Add_Date__c</fullName>
+    <description>Date Added to Salespad (Should roughly match with Doc Date of Invoice)</description>
+    <externalId>false</externalId>
+    <label>Salespad Add Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

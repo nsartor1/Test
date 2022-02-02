@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JDT_Mobilization__c</fullName>
+    <description>All &quot;JDT-X&quot; Items EXCEPT Bulk Freight</description>
+    <externalId>false</externalId>
+    <inlineHelpText>All &quot;JDT-X&quot; Items EXCEPT Bulk Freight</inlineHelpText>
+    <label>JDT Mobilization $</label>
+    <summarizedField>WorkOrderLineItem.Extended_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Product_Code__c</field>
+        <operation>contains</operation>
+        <value>JDT-X</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Product_Code__c</field>
+        <operation>notContain</operation>
+        <value>JDT-X-BULK FREIGHT</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

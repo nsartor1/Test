@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Golf_Reps</fullName>
+    <columns>Sales_Rep_Num__c</columns>
+    <columns>NAME</columns>
+    <columns>Email__c</columns>
+    <columns>Phone__c</columns>
+    <columns>Mobile__c</columns>
+    <columns>Manager__c</columns>
+    <columns>Primary_Location__c</columns>
+    <columns>Primary_Market__c</columns>
+    <columns>Fiscal_Year__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Primary_Market__c</field>
+        <operation>includes</operation>
+        <value>Golf</value>
+    </filters>
+    <label>Active Golf Reps</label>
+    <sharedTo>
+        <role>HR_Manager</role>
+        <role>Sales_Manager</role>
+    </sharedTo>
+</ListView>

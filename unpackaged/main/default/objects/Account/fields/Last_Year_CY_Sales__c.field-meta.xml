@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Year_CY_Sales__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Sales through this date a year ago for Calendar Sales.</inlineHelpText>
+    <label>Last Year CY Sales</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

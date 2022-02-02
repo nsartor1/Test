@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YOY_Sales__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Thru_the_end_of_the_current_month__c &gt; 0 ||  Actual_FY_Sales__c &gt; 0,  Actual_FY_Sales__c - Thru_the_end_of_the_current_month__c , 
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Shows current year sales vs. through this month a year ago</inlineHelpText>
+    <label>FY vs. Prev FY This Month</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

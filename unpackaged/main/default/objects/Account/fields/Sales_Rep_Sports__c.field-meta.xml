@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Rep_Sports__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(Sales_Rep__r.Primary_Market__c) = &quot;Sports Fields&quot;</formula>
+    <inlineHelpText>Will be checked if the Sales Rep for this Account has a Target Market including Sports Fields</inlineHelpText>
+    <label>Sales Rep Sports?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATS_Product__c</fullName>
+    <description>Does Not Include Shipping - otherwise all Products on &quot;SO&quot; Invoice</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Does Not Include Shipping - otherwise all Products on &quot;SO&quot; Invoice</inlineHelpText>
+    <label>ATS Product $</label>
+    <summarizedField>WorkOrderLineItem.Extended_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Product_Code__c</field>
+        <operation>notContain</operation>
+        <value>JDT</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Product_Code__c</field>
+        <operation>notContain</operation>
+        <value>ATS SHIPPING</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

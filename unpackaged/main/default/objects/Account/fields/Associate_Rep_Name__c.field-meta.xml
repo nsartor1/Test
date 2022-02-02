@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Associate_Rep_Name__c</fullName>
+    <description>Associate Rep Name must match the name on the Sales Rep&#39;s record in order for sharing to work - THIS FIELD UPDATED BY TRIGGER</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The associate reps that also can update this Customer (in addition to Primary Sales Rep)</inlineHelpText>
+    <label>Associate Rep Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

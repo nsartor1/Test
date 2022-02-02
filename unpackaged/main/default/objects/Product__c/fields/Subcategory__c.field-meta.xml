@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subcategory__c</fullName>
+    <description>The secondary category (if applicable) - dependent on Primary Category</description>
+    <externalId>false</externalId>
+    <label>Sub Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Web_Sub_Category</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Raw Materials</controllingFieldValue>
+            <controllingFieldValue>Foliar-Pak</controllingFieldValue>
+            <controllingFieldValue>Steel Green</controllingFieldValue>
+            <controllingFieldValue>Fertilizer</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <controllingFieldValue>Seed</controllingFieldValue>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <controllingFieldValue>Tools &amp; Accessories</controllingFieldValue>
+            <controllingFieldValue>Ice Melt</controllingFieldValue>
+            <controllingFieldValue>Infield Products</controllingFieldValue>
+            <controllingFieldValue>Uncategorized</controllingFieldValue>
+            <controllingFieldValue>Sports Turf</controllingFieldValue>
+            <controllingFieldValue>Sand</controllingFieldValue>
+            <valueName>Uncategorized</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foliar-Pak</controllingFieldValue>
+            <controllingFieldValue>Fertilizer</controllingFieldValue>
+            <valueName>Foliar &amp; Soluble</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foliar-Pak</controllingFieldValue>
+            <controllingFieldValue>Fertilizer</controllingFieldValue>
+            <valueName>Granular</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foliar-Pak</controllingFieldValue>
+            <controllingFieldValue>Fertilizer</controllingFieldValue>
+            <valueName>Fungicides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foliar-Pak</controllingFieldValue>
+            <controllingFieldValue>Fertilizer</controllingFieldValue>
+            <valueName>Granular Nutrients</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foliar-Pak</controllingFieldValue>
+            <controllingFieldValue>Fertilizer</controllingFieldValue>
+            <valueName>Granular Pre-emergents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Steel Green</controllingFieldValue>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <controllingFieldValue>Uncategorized</controllingFieldValue>
+            <valueName>S.G. Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Steel Green</controllingFieldValue>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <controllingFieldValue>Uncategorized</controllingFieldValue>
+            <valueName>Steel Green Part</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Steel Green</controllingFieldValue>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <controllingFieldValue>Uncategorized</controllingFieldValue>
+            <valueName>Steel Green Attachment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Steel Green</controllingFieldValue>
+            <valueName>LT Rich Part</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fertilizer</controllingFieldValue>
+            <valueName>Insecticides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Chemicals-Herbicide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Chemicals-Fungicide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Chemicals-Insecticide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Chemicals-Growth Regulator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Chemicals-Wetting Agent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Chemicals-Animal Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Chemicals-Aquatic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Spray Tank Additive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Micronutrients</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Sprayers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Spreaders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Aerators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Snow Removal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>iGO Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools &amp; Accessories</controllingFieldValue>
+            <valueName>Landscape Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools &amp; Accessories</controllingFieldValue>
+            <valueName>Safety Supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools &amp; Accessories</controllingFieldValue>
+            <valueName>Sports Field</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools &amp; Accessories</controllingFieldValue>
+            <valueName>Tee &amp; Green</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools &amp; Accessories</controllingFieldValue>
+            <valueName>Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools &amp; Accessories</controllingFieldValue>
+            <valueName>Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Melt</controllingFieldValue>
+            <valueName>Ice Melt - Bagged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Melt</controllingFieldValue>
+            <valueName>Rock Salt - Bagged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Melt</controllingFieldValue>
+            <valueName>Ice Melt - Bulk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Melt</controllingFieldValue>
+            <valueName>Rock Salt - Bulk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Melt</controllingFieldValue>
+            <valueName>Ice Melt - Liquid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Melt</controllingFieldValue>
+            <valueName>Ice Melt - Liquid Bulk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infield Products</controllingFieldValue>
+            <valueName>Clay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infield Products</controllingFieldValue>
+            <valueName>Conditioner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infield Products</controllingFieldValue>
+            <valueName>Infield - Bulk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infield Products</controllingFieldValue>
+            <valueName>Infield - Bagged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Uncategorized</controllingFieldValue>
+            <controllingFieldValue>Sports Turf</controllingFieldValue>
+            <valueName>Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Uncategorized</controllingFieldValue>
+            <valueName>Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Uncategorized</controllingFieldValue>
+            <valueName>Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Uncategorized</controllingFieldValue>
+            <valueName>Hardscapes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sports Turf</controllingFieldValue>
+            <valueName>Sports Accessories</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

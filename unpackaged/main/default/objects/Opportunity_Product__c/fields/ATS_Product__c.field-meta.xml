@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATS_Product__c</fullName>
+    <description>The ATS Product tied to this Opportunity Product line item</description>
+    <externalId>false</externalId>
+    <label>ATS Product</label>
+    <referenceTo>Product__c</referenceTo>
+    <relationshipName>Opportunity_Products</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Signer_Must_Have_Email_Address</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(  Approved_Signer__c  ) &amp;&amp; ISBLANK(Approved_Signer__r.Email)</errorConditionFormula>
+    <errorDisplayField>Approved_Signer__c</errorDisplayField>
+    <errorMessage>Approved Signer must be a Contact that has an Email address.  Please update the Email field on the desired contact and then you may make them an Approved Signer.</errorMessage>
+</ValidationRule>

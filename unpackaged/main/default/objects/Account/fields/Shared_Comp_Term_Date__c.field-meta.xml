@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shared_Comp_Term_Date__c</fullName>
+    <description>If sharing compensation, the date when this shared compensation Terminates</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If sharing compensation, the date when this shared compensation Terminates</inlineHelpText>
+    <label>Shared Comp Term Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

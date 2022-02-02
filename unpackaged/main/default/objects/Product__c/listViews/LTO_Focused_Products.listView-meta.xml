@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LTO_Focused_Products</fullName>
+    <columns>Product_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>Focus_Product_Category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Focus_Product_Category__c</field>
+        <operation>includes</operation>
+        <value>ENP/Holganix,Herbicides,Precision Labs,Seed_LTO</value>
+    </filters>
+    <label>LTO Focused Products</label>
+    <sharedTo>
+        <group>ATS_Sports_Turf_HQ</group>
+        <group>Facility_Managers</group>
+        <group>Sales_Managers</group>
+        <group>Sales_Reps</group>
+        <role>Collections_Manager</role>
+        <role>HR_Manager</role>
+        <role>Marketing_Manager</role>
+        <role>Sales_Manager</role>
+    </sharedTo>
+</ListView>

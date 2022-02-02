@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Admin_View_All_Active_Reps</fullName>
+    <columns>Sales_Rep_Num__c</columns>
+    <columns>NAME</columns>
+    <columns>Primary_Market__c</columns>
+    <columns>X2019_FY_Total_Sales__c</columns>
+    <columns>X2019_FY_Gross_Profit__c</columns>
+    <columns>X2020_FY_Total_Sales__c</columns>
+    <columns>X2020_FY_Gross_Profit__c</columns>
+    <columns>X2021_FY_Total_Sales__c</columns>
+    <columns>X2021_FY_Gross_Profit__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Manager__c</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>Primary_Location__c</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>House_on_Sales_Analysis__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Admin View - All Active Reps</label>
+    <sharedTo>
+        <group>IT_Department</group>
+    </sharedTo>
+</ListView>

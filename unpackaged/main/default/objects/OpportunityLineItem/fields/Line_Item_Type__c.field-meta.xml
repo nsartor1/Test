@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Line_Item_Type__c</fullName>
+    <description>Seperate Sports Turf and ATS Product Line Items into Categories for Reporting</description>
+    <externalId>false</externalId>
+    <formula>IF(LEFT (PricebookEntry.Product2.ProductCode, 9) = &#39;JDT-X-SUB&#39;, &#39;Sub Contract&#39;, 
+
+  IF(LEFT(PricebookEntry.Product2.ProductCode,5) = &#39;JDT-X&#39; || LEFT(PricebookEntry.Product2.ProductCode,12) = &#39;ATS SHIPPING&#39;, &#39;Exempt&#39;, 
+
+    IF(LEFT(PricebookEntry.Product2.ProductCode,4) = &#39;JDT-&#39;, &#39;Services&#39;,
+
+    &#39;Other&#39;)))</formula>
+    <label>Line Item Type</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

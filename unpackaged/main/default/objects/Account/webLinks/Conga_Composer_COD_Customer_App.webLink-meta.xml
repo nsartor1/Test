@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_COD_Customer_App</fullName>
+    <availability>online</availability>
+    <description>Originally created by Conga Solution Manager. Date of last use of Update Button from Conga Solution record: https://advancedturf--apxtconga4.na96.visual.force.com/a2M2M000000VcGpUAK
+03-Jun-2020 12:59:37 PM</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>COD Customer App</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Account.Id}
+
+&amp;TemplateId=a2O2M000007g6dz
+
+&amp;CongaEmailTemplateId=a2F2M0000025ZFQ
+
+&amp;OFN=COD_Customer_App_%7B!Account.Name%7D
+&amp;DefaultPDF=1
+&amp;AC0=1
+&amp;AC1=Sent%20New%20COD%20Customer%20Account%20Information%20Form
+&amp;CSVisible=1
+&amp;CSRoutingType=SERIAL
+&amp;CSRecipient1={!Account.Sales_Rep_Email__c}
+&amp;CSRole1=cc
+&amp;CSRecipient2=0032M00002zCZl1QAG
+&amp;CSRole2=cc
+&amp;SC0=1
+&amp;SC1=salesforcefile
+&amp;DS7=1141</url>
+    <width>900</width>
+</WebLink>
